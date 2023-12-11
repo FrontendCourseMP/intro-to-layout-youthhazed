@@ -39,6 +39,21 @@
     src: url('../fonts/montserrat-v26-latin-800.woff2') format('woff2'); 
   }
 
+  :root {
+    --btext-color: #121214;
+    --wtext-color: #ffffff;
+    --stext-color: #037E8C;
+    --gtext-color: #787878;
+    --bmain-color: #121214;
+    --wmain-color: #ffffff;
+    --smain-color: #037E8C;
+    --gmain-color: #1F4D53;
+    --mmain-color: #f4f4f4;
+    --dgmain-color: #373737;
+    --lgmain-color: #848484;
+    font-size: 62.5%;
+}
+
   body {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.4rem;
@@ -71,4 +86,14 @@ button {
     padding: 0.4rem;
     background-color: var(--wmain-color);
 }
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+section {
+  padding: 4rem 0;
+}
+
 
