@@ -75,10 +75,80 @@ section {
 }
 
 body {
-    font-family: Montserrat, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.4 rem;
     font-weight: 400;
     color: var(--btext-color);
+}
+
+a:focus {
+    outline: 2px solid black;
+}
+
+a:hover {
+    transition: all 1s ease;
+}
+
+.navigation-a:hover {
+    color: var(--stext-color);
+    background-color: var(--wtext-color);
+    box-shadow: 0 0 10px var(--wtext-color);
+}
+
+.navigation-a-1:hover {
+    color: var(--wtext-color);
+    background-color: var(--stext-color);
+    box-shadow: 0 0 10px var(--stext-color);
+}
+
+.navigation-phone:hover {
+    color: var(--stext-color);
+    background-color: var(--wtext-color);
+    box-shadow: 0 0 10px var(--wtext-color);
+}
+
+.telephone:hover {
+    background-color: var(--stext-color);
+    box-shadow: 10px 10px 10px var(--btext-color);
+    transform: scale(1.1) rotate(1deg);
+}
+
+.first-butt-burger:hover {
+    color: var(--stext-color);
+    box-shadow: 0 0 10px var(--wtext-color);
+    transition: all 1s ease;
+}
+
+.first-logo:hover {
+    background-color: var(--btext-color);
+    box-shadow: 0 0 10px var(--wtext-color);
+    transition: all 1s ease;
+}
+
+.tenth-li-2:hover {
+    background-color: var(--stext-color);
+    color: var(--wtext-color);
+    box-shadow: 10px 10px 10px var(--btext-color);
+    transform: scale(1.1) rotate(1deg);
+}
+
+.tenth-4-2:hover {
+    background-color: var(--stext-color);
+    color: var(--wtext-color);
+    box-shadow: 10px 10px 10px var(--btext-color);
+    transform: scale(1.1) rotate(1deg);
+}
+
+.eleventh-logo:hover {
+    background-color: var(--btext-color);
+    box-shadow: 0 0 10px var(--btext-color);
+    transition: all 1s ease;
+}
+
+.eleventh-a:hover {
+    color: var(--wtext-color);
+    background-color: var(--stext-color);
+    box-shadow: 0 0 10px var(--btext-color);
 }
 
 button:focus {
@@ -150,15 +220,55 @@ input:focus::placeholder {
     transform: translateY(-10px);
 }
 
+label:focus-within {
+    font-weight: bold;
+}
+
+input[type="checkbox"]:checked + label{
+    font-style: italic;
+    color: black;
+}
+
+input:required, select:required {
+    border: 3px solid black;
+}
+
+dt::first-letter {
+    font-size: 150%;
+    color: rgb(63, 182, 63);
+    font-weight: bold;
+}
+
+dd::before {
+    content: "🛈";  
+}
+
+.input:checked + label {
+    text-decoration: line-through;
+    text-decoration-color: black;
+}
+
+dl {
+    counter-reset: list-counter;
+}
+
+dd:nth-child(odd) {
+    color: white;
+}
+
+dd:nth-child(even) {
+    color: purple;
+}
+
 .form-content {
     border-radius: 3rem;
     margin-bottom: 2rem;
-    background-color: gold;
+    background-color: rgb(51, 197, 255);
 }
 
 .form-content legend {
     margin-bottom: 1rem;
-    color: red;
+    color: black;
     max-width: max-content;
 }
 
@@ -189,10 +299,6 @@ input:focus::placeholder {
     margin-bottom: 1rem;
 }
 
-/* .password-checkbox:active {
-    display: none;
-} */
-
 .email {
     max-width: max-content;
     margin-bottom: 1rem;
@@ -219,7 +325,7 @@ label {
 .send,
 .reset {
     padding: 1rem;
-    background-color: greenyellow;
+    background-color:  rgb(51, 197, 255);
     border: 1px solid #1a1e42;
     border-radius: 3rem;
     text-align: center;
@@ -297,6 +403,14 @@ footer {
     color: var(--btext-color);
 }
 
+.tenth-li-2-1 {
+    margin: 0;
+    font-size: 1.6rem;
+    line-height: 130%;
+    text-decoration: none;
+    color: var(--btext-color);
+}
+
 .tenth-li-3-1 {
     color: var(--btext-color);
     margin: 0;
@@ -354,6 +468,7 @@ footer {
     width: 5.4rem;
     height: 6.9rem;
     padding-top: 1rem;
+    transform: rotate(30deg) scale(1.5) skewX(10deg) skewY(10deg);
 }
 
 .eleventh-1 {
@@ -369,6 +484,10 @@ footer {
 }
 
 .eleventh-3 {
+    text-align: center;
+}
+
+.eleventh-4 {
     text-align: center;
 }
 
@@ -474,6 +593,7 @@ footer {
         padding-top: 1rem;
         margin-left: 5rem;
         width: 45%;
+        font-size: 3rem;
     }
 
     .tenth-ul {
@@ -488,9 +608,21 @@ footer {
         padding-top: 0;
     }
 
+    .tenth-li-2 {
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: 124%;  
+    }
+
     .tenth-li3 {
         padding-top: 2rem;
         padding-bottom: 0;
+    }
+
+    .tenth-li-3-1 {
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: 151%
     }
 
     .tenth-4 {
@@ -502,6 +634,9 @@ footer {
     .tenth-4-1 {
         width: 100%;
         padding-bottom: 2rem;
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: 151%;
     }
 
     .tenth-4-2 {
@@ -520,7 +655,7 @@ footer {
     }
 
     .eleventh-logo {
-        src: url(../../pictures/logo-desktop.svg);
+        src: url(../public/pictures/logo-desktop.svg);
         width: 5.7rem;
         height: 7.3rem;
         display: flex;

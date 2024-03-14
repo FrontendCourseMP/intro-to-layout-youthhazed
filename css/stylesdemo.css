@@ -127,240 +127,77 @@ header {
 
 
 
-
-
-.grid {
-    margin-top: 100px;
-    margin-bottom: 100px;
-    padding: 0;
+.cards {
+    padding: 0 5rem 0;
 }
 
-.grid-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 5px;
-    grid-template-rows: 1fr 3fr 3fr 6fr;
-    border: black solid 2px;
-    background-color: black;
-    text-align: center;
-    color: black;
+.card-container {
+    perspective: 1000px; /* Создаем эффект перспективы */
+    width: 200px;
+    height: 200px;
+    display: inline-flex;
+    margin: 7rem;
 }
-
-.grid-1 {
-    grid-column: 1/3;
-    grid-row: 1;
-    background-color: white;
-}
-
-.grid-2 {
-    grid-column: 3;
-    grid-row: 1;
-    background-color: white;
-}
-
-.grid-3 {
-    grid-column: 4;
-    grid-row: 1;
-    background-color: black;
-    color: white;
-}
-
-.grid-4 {
-    grid-column: 1;
-    grid-row: 2/4;
-    background-color: white;
-}
-
-.grid-5 {
-    grid-column: 2;
-    grid-row: 2/4;
-    background-color: white;
-}
-
-.grid-6 {
-    grid-column: 3/5;
-    grid-row: 2/6;
-    background-color: blue;
-    color: white;
-}
-
-.grid-7 {
-    grid-column: 1/3;
-    grid-row: 4/6;
-    background-color: yellow;
-}
-
-.grid-8 {
-    grid-column: 1/2;
-    grid-row: 6/7;
-    background-color: white;
-}
-
-.grid-9 {
-    grid-column: 2/3;
-    grid-row: 6/7;
-    background-color: black;
-    color: white;
-}
-
-.grid-10 {
-    grid-column: 3/5;
-    grid-row: 6/7;
-    background-color: white;
-}
-
-
-
-
-
-.dashboard {
-    display: grid;
-    grid-template-areas: "aside dash";
-    margin-bottom: 100px;
-    padding: 0;
-}
-
-.dashboard-aside {
-    grid-area: aside;
-    background-color: blueviolet;
-    text-align: center;
-}
-
-.dashboard-content {
-    grid-area: dash;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(3, 300px);
-}
-
-.dashboard-img-1 {
+  
+.card {
     width: 100%;
     height: 100%;
-    justify-content: center;
-    position: relative;
-    overflow-x: hidden;
-    background-color: var(--bmain-color);
-    object-fit: cover;
+    transform-style: preserve-3d; /* Сохраняем 3D-эффект */
+    transition: transform 0.6s;
 }
-
-.dashboard-img {
+  
+.card:hover {
+    transform: rotateY(180deg);
+}
+  
+.front, .back {
     width: 100%;
     height: 100%;
-    justify-content: center;
+    position: absolute;
+    backface-visibility: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+.front {
+    background-color: greenyellow;
+}
+  
+.back {
+    background-color: skyblue;
+    transform: rotateY(180deg);
+}
+  
+
+
+.marquee {
+    height: 35px;
+    width: 1440px;  
+    overflow: hidden;
     position: relative;
-    overflow-x: hidden;
-    background-color: var(--bmain-color);
-    object-fit: cover;
+}
+  
+.marquee div {
+    display: block;
+    width: 200%;
+    height: 35px;
+    position: absolute;
+    overflow: hidden;  
+    animation: marquee 5s linear infinite;
+}
+  
+.marquee span {
+    float: left;
+    width: 50%;
+    font-size: 2.8rem;
+}
+  
+@keyframes marquee {
+    0% { left: 0; }
+    100% { left: -100%; }
 }
 
-.dashboard-1 {
-    grid-row: 1;
-    grid-column: span 6;
-}
-
-.dashboard-2 {
-    grid-row: 2;
-    grid-column: span 2;
-}
-
-.dashboard-3 {
-    grid-row: 3;
-    grid-column: span 3;
-}
-
-
-
-
-
-.painting {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 1rem;
-    margin-bottom: 100px;
-    padding: 0;
-}
-
-.painting-img {
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    justify-content: center;
-    position: relative;
-    overflow-x: hidden;
-}
-
-.painting-link {
-    text-decoration: none;
-    color: white;
-    font-size: 3rem;
-    z-index: 2;
-    height: max-content;
-}
-
-.painting-grid {
-    display: grid;
-    max-width: 100px;
-}
-
-.pic-1 {
-    grid-column: 1/4;
-    grid-row: 1/4;
-}
-
-.link-1 {
-    grid-column: 2;
-    grid-row: 2;
-}
-
-.pic-2 {
-    grid-column: 1/4;
-    grid-row: 1/4;
-}
-
-.link-2 {
-    grid-column: 2;
-    grid-row: 2;
-}
-
-.pic-3 {
-    grid-column: 1/4;
-    grid-row: 1/4;
-}
-
-.link-3 {
-    grid-column: 2;
-    grid-row: 2;
-}
-
-.pic-4 {
-    grid-column: 1/4;
-    grid-row: 1/4;
-}
-
-.link-4 {
-    grid-column: 2;
-    grid-row: 2;
-}
-
-.pic-5 {
-    grid-column: 1/4;
-    grid-row: 1/4;
-}
-
-.link-5 {
-    grid-column: 2;
-    grid-row: 2;
-}
-
-.pic-6 {
-    grid-column: 1/4;
-    grid-row: 1/4;
-}
-
-.link-6 {
-    grid-column: 2;
-    grid-row: 2;
-}
+  
 
 
 
@@ -421,6 +258,14 @@ footer {
 }
 
 .tenth-li-2 {
+    margin: 0;
+    font-size: 1.6rem;
+    line-height: 130%;
+    text-decoration: none;
+    color: var(--btext-color);
+}
+
+.tenth-li-2-1 {
     margin: 0;
     font-size: 1.6rem;
     line-height: 130%;
@@ -599,6 +444,7 @@ footer {
         padding-top: 1rem;
         margin-left: 5rem;
         width: 45%;
+        font-size: 3rem;
     }
 
     .tenth-ul {
@@ -613,9 +459,21 @@ footer {
         padding-top: 0;
     }
 
+    .tenth-li-2 {
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: 124%;  
+    }
+
     .tenth-li3 {
         padding-top: 2rem;
         padding-bottom: 0;
+    }
+
+    .tenth-li-3-1 {
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: 151%
     }
 
     .tenth-4 {
@@ -627,6 +485,9 @@ footer {
     .tenth-4-1 {
         width: 100%;
         padding-bottom: 2rem;
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: 151%;
     }
 
     .tenth-4-2 {
@@ -673,5 +534,5 @@ footer {
         text-align: center;
         padding-left: 4rem;
     }
-    
+
 }

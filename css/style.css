@@ -79,17 +79,225 @@ html ::selection {
     background-color: var(--stext-color);
 }
 
+.skip-link {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    padding: 10px 15px;
+    color: #ffffff;
+    background: #006356;
+    transform: translateY(-100%);
+}
+
+.skip-link:focus {
+    transform: translateY(20%);
+}
+
+
+a:focus {
+    outline: 2px solid black;
+}
+
+a:hover {
+    transition: all 1s ease;
+}
+
+.navigation-a {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+}
+
+.navigation-phone {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+}
+
+.telephone {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+}
+
 .navigation-a:hover {
-    color: var(--stext-color);
+    color: var(--wtext-color);
+    background-color: #035E68;
+    box-shadow: 0 0 10px var(--wtext-color);
 }
 
 .navigation-a-1:hover {
     color: var(--wtext-color);
+    background-color: #035E68;
+    box-shadow: 0 0 10px var(--stext-color);
+}
+
+.navigation-phone:hover {
+    color: var(--wtext-color);
+    background-color: #035E68;
+    box-shadow: 0 0 10px var(--wtext-color);
+}
+
+.telephone:hover {
+    background-color: var(--stext-color);
+    box-shadow: 10px 10px 10px var(--btext-color);
+    transform: scale(1.1) rotate(1deg);
+}
+
+.first-butt-burger:hover {
+    color: var(--stext-color);
+    box-shadow: 0 0 10px var(--wtext-color);
+    transition: all 1s ease;
+}
+
+.first-logo:hover {
+    background-color: var(--btext-color);
+    box-shadow: 0 0 10px var(--wtext-color);
+    transition: all 1s ease;
+}
+
+.first-butt:hover {
+    background-color: var(--mmain-color);
+    transition: all 1s ease;
+    box-shadow: 10px 10px 10px var(--stext-color);
+    transform: scale(1.1) rotate(1deg);
+}
+
+.first-butt-text:hover {
+    color: var(--stext-color);
+    background-color: var(--wtext-color);
+    transition: all 1s ease;
+}
+
+.first-butt-pic:hover {
+    background-color: var(--stext-color);
+    box-shadow: 0 0 10px var(--stext-color);
+    transform: scale(1.1) rotate(1deg);
+    transition: all 0.5s ease;
+}
+
+.scr-1:hover {
+    background-color: var(--stext-color);
+    transition: all 1s ease;
+    box-shadow: 0 0 10px var(--wtext-color);
+    transform: scale(1.1) rotate(1deg);
+    cursor: pointer;
+}
+
+.scr-1:focus {
+    outline: 2px solid black;
+}
+
+.scr-2:hover {
+    background-color: var(--stext-color);
+    transition: all 1s ease;
+    box-shadow: 0 0 10px var(--wtext-color);
+    transform: scale(1.1) rotate(1deg);
+    cursor: pointer;
+}
+
+.scr-2:focus {
+    outline: 2px solid black;
+}
+
+.scr-3:hover {
+    background-color: var(--stext-color);
+    transition: all 1s ease;
+    box-shadow: 0 0 10px var(--wtext-color);
+    transform: scale(1.1) rotate(1deg);
+    cursor: pointer;
+}
+
+.scr-3:focus {
+    outline: 2px solid black;
+}
+
+.third-li-6-1:hover {
+    background-color: var(--stext-color);
+    color: var(--wtext-color);
+    box-shadow: 10px 10px 10px var(--btext-color);
+    transform: scale(1.1) rotate(1deg);
+}
+
+.third-li-6-2:hover {
+    background-color: var(--wtext-color);
+    color: var(--stext-color);
+    box-shadow: 10px 10px 10px var(--stext-color);
+    transform: scale(1.1) rotate(1deg);
+}
+
+.third-li-8-1:hover {
+    background-color: var(--stext-color);
+    transition: all 1s ease;
+    box-shadow: 0 0 10px var(--text-color);
+    transform: scale(1.1) rotate(1deg);
+    cursor: pointer;
+}
+
+.third-li-8-1:focus {
+    outline: 2px solid black;
+}
+
+.fourth-3:hover {
+    background-color: var(--wtext-color);
+    color: var(--stext-color);
+    box-shadow: 10px 10px 10px var(--stext-color);
+    transform: scale(1.1) rotate(1deg);
+}
+
+.seventh-3:hover {
+    background-color: var(--stext-color);
+    color: var(--wtext-color);
+    box-shadow: 10px 10px 10px var(--btext-color);
+    transform: scale(1.1) rotate(1deg);
+}
+
+.eighth-4:hover {
+    background-color: var(--stext-color);
+    color: var(--wtext-color);
+    box-shadow: 10px 10px 10px var(--btext-color);
+    transform: scale(1.1) rotate(1deg);
+}
+
+.ninth-li-butt:hover {
+    background-color: var(--stext-color);
+    color: var(--btext-color);
+    box-shadow: 10px 10px 10px var(--btext-color);
+    transform: scale(1.1) rotate(1deg);
+    transition: all 1s ease;
+}
+
+.ninth-4:hover {
+    background-color: var(--wtext-color);
+    color: var(--stext-color);
+    box-shadow: 10px 10px 10px var(--stext-color);
+    transform: scale(1.1) rotate(1deg);
+}
+
+.tenth-li-2:hover {
+    background-color: var(--stext-color);
+    color: var(--wtext-color);
+    box-shadow: 10px 10px 10px var(--btext-color);
+    transform: scale(1.1) rotate(1deg);
+}
+
+.tenth-4-2:hover {
+    background-color: var(--stext-color);
+    color: var(--wtext-color);
+    box-shadow: 10px 10px 10px var(--btext-color);
+    transform: scale(1.1) rotate(1deg);
+}
+
+.eleventh-logo:hover {
+    background-color: var(--btext-color);
+    box-shadow: 0 0 10px var(--btext-color);
+    transition: all 1s ease;
+}
+
+.eleventh-a:hover {
+    color: var(--wtext-color);
+    background-color: var(--stext-color);
+    box-shadow: 0 0 10px var(--btext-color);
 }
 
 body {
-    font-family: Montserrat, sans-serif;
-    font-size: 1.4 rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
     font-weight: 400;
     color: var(--btext-color);
 }
@@ -383,6 +591,8 @@ footer {
     border: 1.5px solid var(--smain-color);
     border-radius: 0.9rem;
     text-decoration: none;
+    /* text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4); */
+    background-color: var(--wmain-color);
 }
 
 .third-li-6-2 {
@@ -435,6 +645,10 @@ footer {
 .third-li-8-1 {
     background-color: var(--bmain-color);
     margin: 0 0.75rem;
+    cursor: pointer;
+    max-width: 2px;
+    max-height: 2px;
+    color: var(--wtext-color);
 }
 
 .third-li-8-2 {
@@ -566,7 +780,7 @@ footer {
     justify-items: center;
     gap: 1.5rem;
     padding: 0;
-    padding: 0 1rem  0;
+    padding: 0 1rem 0;
 }
 
 .sixth-li {
@@ -649,7 +863,7 @@ footer {
 }
 
 .seventh-1-3 {
-    color: var(--stext-color);
+    color: #035963;
     font-size: 1.8rem;
     font-weight: 700;
     line-height: 120%;
@@ -709,6 +923,8 @@ footer {
     border-radius: 0.9rem;
     text-decoration: none;
     margin: 0 0 1rem 2.1rem;
+    /* text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4); */
+    background-color: var(--wmain-color);
 }
 
 .seventh-4 {
@@ -736,7 +952,7 @@ footer {
 
 .eighth-1 {
     text-align: center;
-    color: var(--stext-color);
+    color: #035963;
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 130%;
@@ -778,6 +994,8 @@ footer {
     margin: 0;
     padding: 1.5rem;
     width: 25rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+    background-color: var(--dgmain-color);
 }
 
 .eighth-2-4 {
@@ -797,6 +1015,9 @@ footer {
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 130%;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+    background-color: var(--dgmain-color);
+    width: fit-content;
 }
 
 .eighth-3 {
@@ -817,6 +1038,8 @@ footer {
     border: 1.5px solid var(--smain-color);
     border-radius: 0.9rem;
     text-decoration: none;
+    /* text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4); */
+    background-color: var(--wmain-color);
 }
 
 .eighth-5 {
@@ -991,6 +1214,14 @@ footer {
     color: var(--btext-color);
 }
 
+.tenth-li-2-1 {
+    margin: 0;
+    font-size: 1.6rem;
+    line-height: 130%;
+    text-decoration: none;
+    color: var(--btext-color);
+}
+
 .tenth-li-3-1 {
     color: var(--btext-color);
     margin: 0;
@@ -1067,6 +1298,7 @@ footer {
 .eleventh-3 {
     text-align: center;
     padding: 0 1rem 0;
+    color: #575757;
 }
 
 .eleventh-4 {
@@ -1082,7 +1314,7 @@ footer {
         font-weight: 400;
         src: url('../fonts/montserrat-v26-latin-regular.woff2') format('woff2');
     }
-    
+
     @font-face {
         font-display: swap;
         font-family: 'Montserrat';
@@ -1090,7 +1322,7 @@ footer {
         font-weight: 500;
         src: url('../fonts/montserrat-v26-latin-500.woff2') format('woff2');
     }
-    
+
     @font-face {
         font-display: swap;
         font-family: 'Montserrat';
@@ -1098,7 +1330,7 @@ footer {
         font-weight: 600;
         src: url('../fonts/montserrat-v26-latin-600.woff2') format('woff2');
     }
-    
+
     @font-face {
         font-display: swap;
         font-family: 'Montserrat';
@@ -1106,7 +1338,7 @@ footer {
         font-weight: 700;
         src: url('../fonts/montserrat-v26-latin-700.woff2') format('woff2');
     }
-    
+
     @font-face {
         font-display: swap;
         font-family: 'Montserrat';
@@ -1150,7 +1382,7 @@ footer {
         font-weight: 400;
         src: url('../fonts/montserrat-v26-latin-regular.woff2') format('woff2');
     }
-    
+
     @font-face {
         font-display: swap;
         font-family: 'Montserrat';
@@ -1158,7 +1390,7 @@ footer {
         font-weight: 500;
         src: url('../fonts/montserrat-v26-latin-500.woff2') format('woff2');
     }
-    
+
     @font-face {
         font-display: swap;
         font-family: 'Montserrat';
@@ -1166,7 +1398,7 @@ footer {
         font-weight: 600;
         src: url('../fonts/montserrat-v26-latin-600.woff2') format('woff2');
     }
-    
+
     @font-face {
         font-display: swap;
         font-family: 'Montserrat';
@@ -1174,7 +1406,7 @@ footer {
         font-weight: 700;
         src: url('../fonts/montserrat-v26-latin-700.woff2') format('woff2');
     }
-    
+
     @font-face {
         font-display: swap;
         font-family: 'Montserrat';
@@ -1191,7 +1423,7 @@ footer {
     .navigation-ul {
         display: inline-flex;
         list-style: none;
-        padding-top: 3rem; 
+        padding-top: 3rem;
     }
 
     .navigation-li {
@@ -1206,6 +1438,7 @@ footer {
         display: inline-block;
         width: 12rem;
         text-align: center;
+        background: rgba(100, 100, 100, 0.3);
     }
 
     .navigation-a-1 {
@@ -1216,7 +1449,7 @@ footer {
         display: inline-block;
         width: 15rem;
         text-align: center;
-        
+        background: rgba(100, 100, 100, 0.3);
     }
 
     .navigation-phone {
@@ -1227,6 +1460,7 @@ footer {
         text-decoration: none;
         margin-bottom: 1rem;
         padding-left: 1rem;
+        background: rgba(100, 100, 100, 0.3);
     }
 
     .phone {
@@ -1242,7 +1476,7 @@ footer {
         padding: 1rem 0.9rem;
         color: var(--wtext-color);
         border-radius: 0.9rem;
-        background-color: var(--gtext-color);
+        background-color: rgba(132, 132, 132, 0.551);
         text-decoration: none;
     }
 
@@ -1263,7 +1497,7 @@ footer {
 
     .first-section {
         background: linear-gradient(0deg, rgba(39, 39, 41, 0.60) 0%, rgba(39, 39, 41, 0.60) 100%),
-        url(../pictures/first-background-desktop.jpg), lightgray 50% / cover no-repeat;
+            url(../pictures/first-background-desktop.jpg), lightgray 50% / cover no-repeat;
         background-size: cover;
         width: 100%;
     }
@@ -1367,13 +1601,13 @@ footer {
         grid-template-columns: repeat(4, 1fr);
         padding: 0 1rem 0;
     }
-    
+
     .third-section {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         padding: 0;
     }
-    
+
     .th1 {
         order: 2;
         padding: 10rem 0 10rem 15rem;
@@ -1393,7 +1627,7 @@ footer {
     .th4 {
         order: 4;
         max-width: 100%;
-        padding-bottom:10rem;
+        padding-bottom: 10rem;
     }
 
     .th5 {
@@ -1472,6 +1706,7 @@ footer {
         width: 100%;
         height: 90%;
     }
+
     .third-li-7-1 {
         width: 200%;
     }
@@ -1495,7 +1730,7 @@ footer {
     }
 
     .fourth-section-back {
-        background-image: url(../pictures/fourth-back-desktop.svg);
+        background-image: url(../../pictures/fourth-back-desktop.svg);
         background-size: cover;
         background-position: center;
     }
@@ -1515,7 +1750,7 @@ footer {
     }
 
     .fifth-back {
-        background-image: url(../pictures/fifth-back.svg);
+        background-image: url(../../pictures/fifth-back.svg);
         background-size: cover;
         background-position: center;
         padding: 8rem 0 7rem;
@@ -1557,7 +1792,7 @@ footer {
     }
 
     .sixth-section-back {
-        background-image: url(../pictures/sixth-back-desktop.svg);
+        background-image: url(../../pictures/sixth-back-desktop.svg);
         background-size: cover;
         background-position: center;
         padding: 5rem 0 6rem;
@@ -1588,7 +1823,7 @@ footer {
     }
 
     .seventh-back {
-        background-image: url(../pictures/seventh-back-desktop.svg);
+        background-image: url(../../pictures/seventh-back-desktop.svg);
         background-size: cover;
         background-position: center;
     }
@@ -1616,7 +1851,7 @@ footer {
     }
 
     .eighth-section-back {
-        background-image: url(../pictures/eighth-back-desktop.svg);
+        background-image: url(../../pictures/eighth-back-desktop.svg);
         background-size: cover;
         background-position: center;
         padding: 5rem 0 7rem;
@@ -1667,7 +1902,7 @@ footer {
     }
 
     .ninth-section-back {
-        background-image: url(../pictures/ninth-back-desktop.svg);
+        background-image: url(../../pictures/ninth-back-desktop.svg);
         background-size: cover;
         background-position: center;
         padding-top: 6rem;
@@ -1725,7 +1960,7 @@ footer {
         padding-top: 8rem;
         padding-bottom: 8rem;
     }
-    
+
     .tenth-li2 {
         padding-top: 0;
     }
@@ -1733,7 +1968,13 @@ footer {
     .tenth-li-2 {
         font-size: 1.8rem;
         font-weight: 400;
-        line-height: 124%;  
+        line-height: 124%;
+    }
+
+    .tenth-li-2-1 {
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: 124%;
     }
 
     .tenth-li-3-1 {
@@ -1777,7 +2018,7 @@ footer {
     }
 
     .eleventh-logo {
-        src: url(../pictures/logo-desktop.svg);
+        src: url(../../pictures/logo-desktop.svg);
         width: 5.7rem;
         height: 7.3rem;
         display: flex;
@@ -1792,7 +2033,7 @@ footer {
         display: inline;
         list-style: none;
     }
-    
+
     .eleventh-li {
         display: inline;
     }
@@ -1822,7 +2063,7 @@ footer {
         font-weight: 400;
         src: url('../fonts/montserrat-v26-latin-regular.woff2') format('woff2');
     }
-    
+
     @font-face {
         font-display: swap;
         font-family: 'Montserrat';
@@ -1830,7 +2071,7 @@ footer {
         font-weight: 500;
         src: url('../fonts/montserrat-v26-latin-500.woff2') format('woff2');
     }
-    
+
     @font-face {
         font-display: swap;
         font-family: 'Montserrat';
@@ -1838,7 +2079,7 @@ footer {
         font-weight: 600;
         src: url('../fonts/montserrat-v26-latin-600.woff2') format('woff2');
     }
-    
+
     @font-face {
         font-display: swap;
         font-family: 'Montserrat';
@@ -1846,7 +2087,7 @@ footer {
         font-weight: 700;
         src: url('../fonts/montserrat-v26-latin-700.woff2') format('woff2');
     }
-    
+
     @font-face {
         font-display: swap;
         font-family: 'Montserrat';
@@ -1998,7 +2239,7 @@ footer {
         line-height: 21px;
         padding-right: 2rem;
     }
-    
+
     .ninth-2 {
         font-size: 2.4rem;
         font-weight: 600;
