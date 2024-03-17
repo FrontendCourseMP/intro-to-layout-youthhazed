@@ -2255,7 +2255,7 @@ footer {
   .ninth-3 {
     margin: 2rem 17rem 3rem;
     font-size: 1.4rem;
-    font-weight: 400;
+    font-weight: 400;  
   }
 
   .ninth-ul {
@@ -2288,5 +2288,5 @@ footer {
     background-size: cover;
     background-position: center;
     width: 100%;
-  }
+  } 
 }
