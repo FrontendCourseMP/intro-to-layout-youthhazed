@@ -541,7 +541,6 @@ footer {
         color: var(--wtext-color);
         text-decoration: none;
         margin-bottom: 1rem;
-        padding-left: 1rem;
     }
 
     .phone {
