@@ -230,12 +230,12 @@ input[type="checkbox"]:checked + label{
 }
 
 input:required, select:required {
-    border: 3px solid black;
+    border: 3px solid red;
 }
 
 dt::first-letter {
     font-size: 150%;
-    color: rgb(63, 182, 63);
+    color: green;
     font-weight: bold;
 }
 
@@ -263,12 +263,12 @@ dd:nth-child(even) {
 .form-content {
     border-radius: 3rem;
     margin-bottom: 2rem;
-    background-color: rgb(51, 197, 255);
+    background-color: skyblue;
 }
 
 .form-content legend {
     margin-bottom: 1rem;
-    color: black;
+    color: blue;
     max-width: max-content;
 }
 
@@ -325,7 +325,7 @@ label {
 .send,
 .reset {
     padding: 1rem;
-    background-color:  rgb(51, 197, 255);
+    background-color: greenyellow;
     border: 1px solid #1a1e42;
     border-radius: 3rem;
     text-align: center;
@@ -541,6 +541,7 @@ footer {
         color: var(--wtext-color);
         text-decoration: none;
         margin-bottom: 1rem;
+        padding-left: 1rem;
     }
 
     .phone {
