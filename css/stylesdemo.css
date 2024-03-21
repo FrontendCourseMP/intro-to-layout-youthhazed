@@ -160,11 +160,11 @@ header {
 }
   
 .front {
-    background-color: greenyellow;
+    background-color: rgb(255, 47, 47);
 }
   
 .back {
-    background-color: skyblue;
+    background-color: rgb(0, 8, 255);
     transform: rotateY(180deg);
 }
   
@@ -505,7 +505,7 @@ footer {
     }
 
     .eleventh-logo {
-        src: url(../../pictures/logo-desktop.svg);
+        src: url(../pictures/logo-desktop.svg);
         width: 5.7rem;
         height: 7.3rem;
         display: flex;
